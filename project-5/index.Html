@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>project 151</title>
+        <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+        <script src="base.js"></script>
+        <script src="car.js"></script>
+        <a-asset-item id="car" src="models/scene.gltf"></a-asset-item>
+    </head>
+    <body>
+        <a-scene background="white">
+            <a-cylinder position="0 -0.24 0" rotation="0 0 0" base></a-cylinder>
+            <a-entity>
+                <a-entity gltf-model="#car" rotation="0 0 0" cars></a-entity>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
